@@ -93,7 +93,7 @@
     if (!target) return;
     const bars = document.createDocumentFragment();
     for (let i = 0; i < 24; i++) {
-      const bar = document.createElement('span');
+      const bar = document.createElement('i');
       const height = 5 + Math.round(20 * Math.abs(Math.sin((i + 1) * (num === 1 ? .65 : .83)) * Math.cos(i * .22)));
       bar.style.height = height + 'px';
       bars.appendChild(bar);
